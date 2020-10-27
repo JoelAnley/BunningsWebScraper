@@ -1,4 +1,5 @@
-```from selenium import webdriver
+```
+from selenium import webdriver
 import time
 import bs4 as bs
 from selenium.common.exceptions import NoSuchElementException
@@ -35,4 +36,5 @@ except NoSuchElementException:
         priceitem = item.find('span', class_="codified-product-tile__price--value--dollars").text
         priceitemcents = item.find('span', class_="codified-product-tile__price--value--decimal-cents").text
 
-        f.write(titleitem + ',' + '$' + priceitem + priceitemcents + '\n ')```
+        f.write(titleitem + ',' + '$' + priceitem + priceitemcents + '\n ')
+        ```
